@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMSTNRAGRAHARAM</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: var(--secondary-color);
+            padding: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        .web-view, .mobile-view, .tab-view {
+            margin: 1rem auto;
+            max-width: 1200px;
+            padding: 1rem;
+        }
+
+        .mobile-view {
+            display: none;
+        }
+
+        .tab-view {
+            display: none;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .web-view {
+                display: none;
+            }
+
+            .tab-view {
+                display: block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tab-view {
+                display: none;
+            }
+
+            .mobile-view {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PUMSTNR AGRAHARAM</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="web-view">
+        <h2>Welcome to PUMSTNR AGRAHARAM</h2>
+        <p>This is the web view of the website. Add detailed information about the school here.</p>
+    </div>
+
+    <div class="tab-view">
+        <h2>Welcome to PUMSTNR AGRAHARAM</h2>
+        <p>This is the tablet view of the website. Add summarized content for tablet users here.</p>
+    </div>
+
+    <div class="mobile-view">
+        <h2>Welcome to PUMSTNR AGRAHARAM</h2>
+        <p>This is the mobile view of the website. Add concise content for mobile users here.</p>
+    </div>
+
+    <footer>
+        <p>Agraharam Middle School, Chetti Street, Thalainayar, Tamil Nadu</p>
+        <p><a href="https://maps.app.goo.gl/YrFq9YbsNtBBza6M9" style="color: var(--secondary-color); text-decoration: underline;">View on Google Maps</a></p>
+    </footer>
+</body>
+</html>
